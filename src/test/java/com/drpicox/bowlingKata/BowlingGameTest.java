@@ -11,6 +11,13 @@ import static org.junit.Assert.assertThat;
 
 public class BowlingGameTest {
 
+    private Game g;
+
+    @Before
+    public void setUp() throws Exception{
+        g = new Game();
+    }
+
     @Test
     public void testGutterGame() throws Exception{
         Game g = new Game();
