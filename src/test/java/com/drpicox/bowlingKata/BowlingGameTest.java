@@ -26,12 +26,12 @@ public class BowlingGameTest {
     @Test
     public void testGutterGame() throws Exception{
         rollMany(20,0);
-        assertEquals(0,g.score());
+        assertEquals(0, g.score());
     }
 
     @Test
     public void testAllOnes() throws Exception{
-        rollMany(0,1);
+        rollMany(20,1);
         assertEquals(20,g.score());
     }
 }
