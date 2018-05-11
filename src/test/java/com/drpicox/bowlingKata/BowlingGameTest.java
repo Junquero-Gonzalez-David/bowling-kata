@@ -3,11 +3,7 @@ package com.drpicox.bowlingKata;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.sql.SQLException;
-
-import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 
 public class BowlingGameTest {
 
@@ -39,7 +35,7 @@ public class BowlingGameTest {
     public void testOneSpare() throws Exception{
         g.roll(5);
         g.roll(5); // spare
-        g.roll(2);
+        g.roll(3);
         rollMany(17,0);
         assertEquals(16,g.score());
     }
